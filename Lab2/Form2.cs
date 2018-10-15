@@ -20,5 +20,10 @@ namespace Lab2
 			InitializeComponent();
 		}
 
-      }
+        private void Form2_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            form1.isOpen = true;
+            form1.count--;
+        }
+    }
 }
